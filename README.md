@@ -32,7 +32,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.android.tools.build:gradle:3.3.1'
     }
 }
 
@@ -84,7 +84,7 @@ Add the Slider to your layout:
 There are some default indicators. If you want to use a provided indicator:
  
 ```xml
-<com.glide.slider.library.Indicators.PagerIndicator
+<com.glide.slider.library.PagerIndicator
         android:id="@+id/custom_indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -15,6 +15,7 @@ import com.bumptech.glide.load.engine.GlideException;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.request.target.Target;
+import com.glide.slider.library.MyGlideAppModule;
 import com.glide.slider.library.R;
 
 import java.io.File;
@@ -34,7 +35,7 @@ public abstract class BaseSliderView {
     private String mUrl;
     private File mFile;
     private int mRes;
-    private Glide mGlideUrl;
+    private MyGlideAppModule mGlideUrl;
 
     public OnSliderClickListener mOnSliderClickListener;
 
@@ -113,7 +114,7 @@ public abstract class BaseSliderView {
      * @param glideUrl
      * @return
      */
-    public BaseSliderView image(Glide glideUrl) {
+    public BaseSliderView image(MyGlideAppModule glideUrl) {
         if (mUrl != null || mFile != null || mRes != 0) {
             throw new IllegalStateException("Call multi image function," +
                     "you only have permission to call it once");

@@ -1,4 +1,4 @@
-package com.glide.slider.library.Indicators;
+package com.glide.slider.library;
 
 import android.content.Context;
 import android.content.res.TypedArray;

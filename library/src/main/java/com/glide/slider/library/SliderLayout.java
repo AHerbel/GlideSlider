@@ -13,7 +13,6 @@ import android.widget.RelativeLayout;
 
 import com.glide.slider.library.Animations.SliderAnimationInterface;
 import com.glide.slider.library.Animations.DescriptionAnimation;
-import com.glide.slider.library.Indicators.PagerIndicator;
 import com.glide.slider.library.SliderTypes.BaseSliderView;
 import com.glide.slider.library.Transformers.AccordionTransformer;
 import com.glide.slider.library.Transformers.BackgroundToForegroundTransformer;
@@ -42,7 +41,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 /**
- * SliderLayout is compound layout. This is combined with {@link com.glide.slider.library.Indicators.PagerIndicator}
+ * SliderLayout is compound layout. This is combined with {@link PagerIndicator}
  * and {@link com.glide.slider.library.Tricks.ViewPagerEx} .
  * <p>
  * There is some properties you can set in XML:
@@ -131,7 +130,7 @@ public class SliderLayout extends RelativeLayout {
     private long mSliderDuration = 4000;
 
     /**
-     * Visibility of {@link com.glide.slider.library.Indicators.PagerIndicator}
+     * Visibility of {@link PagerIndicator}
      */
     private PagerIndicator.IndicatorVisibility mIndicatorVisibility = PagerIndicator.IndicatorVisibility.Visible;
 
@@ -146,7 +145,7 @@ public class SliderLayout extends RelativeLayout {
     private SliderAnimationInterface mCustomAnimation;
 
     /**
-     * {@link com.glide.slider.library.Indicators.PagerIndicator} shape, rect or oval.
+     * {@link PagerIndicator} shape, rect or oval.
      */
 
     public SliderLayout(Context context) {
@@ -548,7 +547,7 @@ public class SliderLayout extends RelativeLayout {
     }
 
     /**
-     * get the {@link com.glide.slider.library.Indicators.PagerIndicator} instance.
+     * get the {@link PagerIndicator} instance.
      * You can manipulate the properties of the indicator.
      *
      * @return
